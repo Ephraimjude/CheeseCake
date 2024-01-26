@@ -1,0 +1,42 @@
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menuButton{
+    background: transparent;
+    border: none;
+}
+
+.menuButton,
+.mobileLinks{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .links{
+        display: none;
+    }
+
+    .menuButton{
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobileLinks{
+        position: absolute;
+        color: var(--active);
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background-color: var(--activeText);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        z-index: 1;
+    }
+}
