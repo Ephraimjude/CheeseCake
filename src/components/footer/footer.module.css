@@ -2,18 +2,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: auto;
     height: 100px;
     color: #808080;
 }
 
-.logo{
-    font-weight: bold;
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
-.text{
-    font-size: 12px;
+.mediaIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    gap: 20px;
+    padding: 40px 0 0 0;
+}
+
+.facebook{
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {

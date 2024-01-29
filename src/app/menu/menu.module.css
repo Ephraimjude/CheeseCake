@@ -1,7 +1,105 @@
-.container{
+.menuMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menuTitle{
+    padding-top: 100px;
+    font-size: 28px;
+}
+
+.menuList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menuImgContainer{
+    width: 100%;
+}
+
+.menu{
+    width: 355px;
+    height: 351px;
+    background-color: var(--bg);
+    border-radius: 41px;
+    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 30px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.rating{
+    display: flex;
+}
+
+.stars{
+    position: relative;
+    margin-right: 5px;
+  }
+
+.star{
+    width: 15px;
+    height: 15px;
+}
+
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.menu:hover {
+    transform: scale(1.05);
+}
+  
+.menuImgContainer {
+    text-align: center;
+    padding: 20px 0;
+}
+  
+.menuImg {
+    width: 163px;
+    height: 158px;
+}
+  
+.menuNameContainer {
+    padding: 10px;
+}
+  
+.menuName {
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+.menuDesc {
+    color: #555;
+    font-size: 11px;
+}
+  
+.menuPrice {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.sliderButton {
+    position: relative;
+    top: 15px;
+    left: 46%;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    background-color: var(--bg);
+    cursor: pointer;
+  }
