@@ -8,7 +8,10 @@
 
 .menuTitle{
     padding-top: 100px;
-    font-size: 28px;
+}
+
+.menuTitle h1{
+    font-size: 64px;
 }
 
 .menuList{
@@ -28,7 +31,7 @@
     height: 351px;
     background-color: var(--bg);
     border-radius: 41px;
-    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 8px rgb(0, 0, 0, 0.2);
     overflow: hidden;
     padding: 30px;
     transition: transform 0.5s ease-in-out;

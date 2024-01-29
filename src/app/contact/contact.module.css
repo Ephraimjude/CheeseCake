@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -30,7 +30,6 @@
 .contactForm{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     max-width: 700px;
 }
 
@@ -63,4 +62,5 @@
     background-color: #FCAE36;
     box-shadow: 0 0 4px 4px rgb(0, 0, 0, 0.2);
     cursor: pointer;
+    font-size: 20px;
 }

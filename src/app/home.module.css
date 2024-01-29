@@ -1,74 +1,99 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  padding: 40px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 610px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title p {
+  font-size: 55px;
+}
+
+.desc {
+  font-size: 20px; 
+  width: 70%;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.button {
+  background-color: var(--bg);
+  padding: 15px 20px;
+  min-width: 150px;
+  border: 1px solid var(--activeText);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.button:first-child {
+  background-color: var(--activeText);
+  color: var(--active);
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.heroImg {
+  width: 100%; 
+  height: auto; 
+  max-width: 610px; 
+  object-fit: contain;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .textContainer {
+    width: 100%;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .buttons {
     flex-direction: column;
-    padding: 40px;
-    max-width: 1280px;
-    margin: auto;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
 }
 
-.homeContainer{
-    flex-wrap: wrap;
-}
+@media (max-width: 480px) {
+  .title p {
+    font-size: 1.5rem; 
+  }
 
-.home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .desc {
+    font-size: 0.9rem; 
+  }
 }
-    
-.textContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 62%;
-}
-    
-.title{
-    font-size: 52px;
-    font-weight: bold;
-}
-    
-.desc{
-    font-size: 20px;
-    width: 68%;
-}
-    
-.buttons{
-    display: flex;
-    gap: 20px;
-}
-    
-.button{
-    background-color: var(--bg);
-    padding: 20px;
-    min-width: 150px;
-    border: 1px solid var(--activeText);
-    border-radius: 40px;
-    cursor: pointer;
-}
-    
-.button:first-child{
-    background-color: var(--activeText);
-    color: var(--active);
-    box-shadow: 0px 15px 0 0 rgb(0, 0, 0, .1);
-}
-    
-.imgContainer{
-    position: relative;
-}
-    
-.heroImg{
-    object-fit: contain;
-}
-    
-@media (max-width: 102px){
-    
-    
-}
-    
-@media (max-width: 768px){
-    
-}
-
