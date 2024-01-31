@@ -10,7 +10,7 @@ const Contact = () => {
                     <div className={styles.infoText}>
                         <h1>Contact Us</h1>
                         <p>
-                            Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you’d like to connect below
+                            Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you’d like to connect below...
                         </p>
                     </div>
                     <div className={styles.contactImg}>

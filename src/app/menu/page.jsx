@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './menu.module.css';
+import { RiArrowRightSLine } from '@remixicon/react';
 
 const Menu = () => {
     return(
@@ -115,9 +116,19 @@ const Menu = () => {
                 </div>
               </div>
             </div>
-            <button className={styles.sliderButton}>
-                Slide
-            </button>
+            <div className={styles.sliderButtonContainer}>
+              <div className={styles.sliderButton}>
+                <button className={styles.sliderButton}>
+                View More 
+                </button>
+              </div>
+              <div className={styles.buttonText}>
+                <RiArrowRightSLine
+                  size = {40}
+                  className = "arrow"
+                />
+              </div>
+            </div>
           </div>
         </div>
     )

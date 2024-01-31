@@ -63,3 +63,46 @@
     cursor: pointer;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    .contactContainer {
+      gap: 10px;
+    }
+  
+    .infoText {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .contactForm input,
+    .contactForm textarea {
+      width: 100%;
+    }
+  
+    .contactForm button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {  
+    .container h1{
+        font-size: 1.5rem;
+    }
+  
+    .infoText {
+        width: 100%;
+        margin: auto;
+        font-size: 12px;
+        font-weight: normal;
+        max-width: 300px;
+    }
+
+    .contactImg{
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    .contactForm button {
+      width: 100%;
+    }
+  }

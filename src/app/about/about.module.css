@@ -1,58 +1,107 @@
-.about{
+.about {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
     gap: 50px;
-}
-
-.title{
+    margin-top: -100px;
+  }
+  
+  .title {
     font-weight: bold;
-}
-
-.title p{
-    font-size: 60px;
-}
-
-.aboutImgContainer{
-    height: 95%;
-    width: 43%;
-}
-
-.aboutImg{
+  }
+  
+  .title p {
+    font-size: 56px;
+  }
+  
+  .aboutImgContainer {
+    height: 100%; /* Adjust the height as needed */
+    width: 45%; /* Adjust the width as needed */
+  }
+  
+  .aboutImg {
+    position: relative;
     width: 100%;
-    width: 100%;
-    margin-top: -150px;
-}
-
-.aboutTextContainer{
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  .aboutTextContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 62%;
-}
-
-.aboutSubtitle{
+    width: 60%; /* Adjust the width as needed */
+  }
+  
+  .aboutSubtitle {
     font-size: 20px;
-}
-
-.aboutDesc{
+  }
+  
+  .aboutDesc {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    width: 88%;
+    font-size: 22px;
+    width: 100%;
     gap: 15px;
-}
-
-.aboutBtn{
+  }
+  
+  .aboutBtn {
     padding: 15px 20px;
     min-width: 150px;
     cursor: pointer;
     border-radius: 40px;
-    box-shadow: 0 5px 5px 4px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
     background-color: var(--activeText);
     color: var(--active);
-    box-shadow: 0px, 15px, 0px, 0px rgb(0, 0, 0, .1);
-}
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .aboutImgContainer,
+    .aboutTextContainer {
+      width: 100%;
+      margin: auto;
+    }
+
+    .title p{
+        font-size: 50px;
+    }
+
+    .aboutImgContainer{
+        margin-top: -80px;
+    }
+
+    .aboutBtn{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title p {
+      font-size: 1.5rem; 
+    }
+  
+    .desc {
+      font-size: 17px; 
+    }
+
+    .aboutSubtitle {
+        font-size: 16px;
+        font-style: italic;
+      }
+      
+    .aboutDesc {
+    font-size: 20px;
+    }
+
+    .aboutTextContainer{
+        margin-top: -60px;
+    }
+  }
+  

@@ -96,13 +96,76 @@
     font-size: 20px;
 }
 
-.sliderButton {
+.sliderButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: relative;
     top: 15px;
-    left: 46%;
+    left: 45%;
     right: 10px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.sliderButton{
+    color: #cfcab9;
     border: none;
     background-color: var(--bg);
     cursor: pointer;
+    font-size: 25px;
+}
+
+.buttonText{
+    padding: 0 10px 0 10px;
+    color: #cfcab9;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .menuTitle h1 {
+      font-size: 50px;
+    }
+  
+    .menuDesc,
+    .menuPrice {
+      font-size: 16px;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+
+  }
+
+  @media (max-width: 480px) {
+
+    .menuTitle h1 {
+        font-size: 1.5rem;
+      }
+
+    .menuName {
+        font-size: 15px;
+    }
+
+    .menuDesc {
+        font-size: 10px;
+    }
+
+    .menuPrice {
+        font-size: 12px;
+    }
+
+    .sliderButtonContainer{
+        margin-top: -30px;
+    }
+
+    .sliderButton{
+        font-size: 12px;
+    }
+    
+    .buttonText{
+        size: 12px;
+    }
   }
