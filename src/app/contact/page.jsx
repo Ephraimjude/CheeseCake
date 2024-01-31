@@ -5,10 +5,10 @@ import styles from './contact.module.css';
 const Contact = () => {
     return (
         <div className={styles.container}>
-            <h1>Contact Us</h1>
             <div className={styles.contactContainer}>
                 <div className={styles.contactInfo}>
                     <div className={styles.infoText}>
+                        <h1>Contact Us</h1>
                         <p>
                             Need to get in touch with us? Either fill out the form with your inquiry or find the department phone, email you’d like to connect below
                         </p>

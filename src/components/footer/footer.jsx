@@ -4,7 +4,8 @@ import { RiFacebookFill, RiInstagramLine, RiTwitterXLine, RiYoutubeLine } from '
 const Footer = () => {
     return(
         <div className={styles.container}>
-            <div className={styles.mediaIcons}>
+            <div className={styles.footerContainer}>
+                <div className={styles.mediaIcons}>
                         <div className={styles.facebook}>
                             <RiFacebookFill
                             size={40}
@@ -32,8 +33,12 @@ const Footer = () => {
                             color='#523728'
                             className='icon'
                         />
-                        </div>
-                    </div>
+                        </div>      
+                </div>
+                <div className={styles.copyright}>
+                    <p className={styles.copyrightText}>Copyright 2024 Ephraim | All rights reserved</p>
+                </div>
+            </div>
         </div>
     )
 }
