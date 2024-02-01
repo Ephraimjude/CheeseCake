@@ -16,7 +16,8 @@
 
 .signInBtn{
     padding: 10px;
-    border: 1px solid var(--activeText);
+    border: none;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0, 0.2);
     border-radius: 30px;
     background-color: transparent;
     cursor: pointer;
@@ -25,4 +26,44 @@
 
 .button{
     padding: 20px;
+}
+
+@media (max-width: 768px){
+    .logo{
+        width: 60%;
+    }
+
+    .logoImg{
+        width: 50%;
+        height: 50%;
+    }
+
+    .signInBtn{
+        padding: 5px;
+    }
+
+    .menu{
+        background-color: transparent;
+        color: var(--activeText);
+    }
+}
+
+@media (max-width: 480px){
+    .logo{
+        width: 60%;
+    }
+
+    .logoImg{
+        width: 50%;
+        height: 50%;
+    }
+
+    .signInBtn{
+        padding: 5px;
+    }
+
+    .menu{
+        background-color: transparent;
+        color: var(--activeText);
+    }
 }

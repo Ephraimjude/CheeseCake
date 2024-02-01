@@ -30,11 +30,19 @@ const Home = () => {
               <Image src="/Homeimage.png" alt=''width={600} height={600} className={styles.heroImg}/>
             </div>
           </div>
+        </div>
+        <div className={styles.about}>
+          <About />          
         </div>        
-        <About />
-        <Menu />
-        <Blog />
-        <Contact />
+        <div className={styles.menu}>
+          <Menu />          
+        </div>  
+        <div className={styles.blog}>
+          <Blog />
+        </div>  
+        <div className={styles.contact}>
+          <Contact />
+        </div>    
     </div>
   )
 };

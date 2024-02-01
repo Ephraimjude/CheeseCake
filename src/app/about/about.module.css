@@ -2,9 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
-    margin-top: -100px;
   }
   
   .title {
@@ -17,7 +16,7 @@
   
   .aboutImgContainer {
     height: 100%; /* Adjust the height as needed */
-    width: 45%; /* Adjust the width as needed */
+    width: 450px; /* Adjust the width as needed */
   }
   
   .aboutImg {
@@ -31,7 +30,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 60%; /* Adjust the width as needed */
+    max-width: 600px; /* Adjust the width as needed */
+    width: 100%;
   }
   
   .aboutSubtitle {
@@ -73,6 +73,10 @@
         font-size: 50px;
     }
 
+    .aboutSubtitle{
+      font-style: italic;
+    }
+
     .aboutImgContainer{
         margin-top: -80px;
     }
@@ -83,25 +87,30 @@
   }
 
   @media (max-width: 480px) {
+    .about{
+    margin-top: 60px;
+    padding: 5px;
+    }
+
     .title p {
-      font-size: 1.5rem; 
+    font-size: 1.5rem; 
     }
   
     .desc {
-      font-size: 17px; 
+    font-size: 17px; 
     }
 
     .aboutSubtitle {
-        font-size: 16px;
-        font-style: italic;
-      }
+      font-size: 16px;
+      font-style: italic;
+    }
       
     .aboutDesc {
     font-size: 20px;
     }
 
     .aboutTextContainer{
-        margin-top: -60px;
+      margin-top: -60px;
     }
   }
   
