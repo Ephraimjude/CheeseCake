@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './links.module.css';
-import NavLink from "./NavLink/navLInk";
+import NavLink from "./navLink/navLink";
 import Image from 'next/image';
 
 const links = [
@@ -17,6 +17,10 @@ const links = [
     {
         title: "Menu",
         path: "/menu"
+    },
+    {
+        title: "Blog",
+        path:  "/blog"
     },
     {
         title: "Contact",

@@ -27,4 +27,4 @@ const NavLink = ( {item, onClick} ) => {
     )
 }
 
-export default NavLink
+export default NavLink;
