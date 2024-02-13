@@ -35,6 +35,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: var(--active);
       justify-content: center;
       gap: 10px;
       z-index: 1;
