@@ -35,7 +35,7 @@
 }
 
 .menu{
-    width: 340px;
+    max-width: 340px;
     height: 351px;
     background-color: var(--bg);
     border-radius: 41px;
@@ -153,15 +153,20 @@
       }
 
     .menuName {
-        font-size: 15px;
-    }
-
-    .menuDesc {
         font-size: 10px;
     }
 
+    .menuDesc {
+        font-size: 8px;
+    }
+
     .menuPrice {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    
+    .star{
+        width: 10px;
+        height: 10px;
     }
 
     .sliderButtonContainer{
