@@ -19,10 +19,6 @@ const links = [
         path: "/menu"
     },
     {
-        title: "Blog",
-        path:  "/blog"
-    },
-    {
         title: "Contact",
         path: "/contact"
     }

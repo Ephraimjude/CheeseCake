@@ -42,9 +42,17 @@
         padding: 5px;
     }
 
+    .menuAndButton{
+        flex-direction: row-reverse;
+    }
+
     .menu{
         background-color: transparent;
         color: var(--activeText);
+    }
+
+    .menuAndButton{
+        padding: 0 20px 20px 0;
     }
 }
 
@@ -59,11 +67,16 @@
     }
 
     .signInBtn{
-        padding: 5px;
+        width: 45px;
+        font-size: 8px;
     }
 
     .menu{
         background-color: transparent;
         color: var(--activeText);
+    }
+
+    .menuAndButton{
+        padding: 0 20px 20px 0;
     }
 }
